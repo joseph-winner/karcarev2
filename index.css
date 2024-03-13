@@ -57,15 +57,12 @@
     font-size: 24px;
 }
 
-gmp-map {
-    height: 300px;
-  }
-
 /* MINI NAVIGATION STARTS */
 .body-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 35px;
 }
 
 .body-container .items-container{
@@ -179,3 +176,75 @@ gmp-map {
     margin-top: 10px;
 }
 /* ABOUT US SECTION ENDS */
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY RESPONSIVENESS */
+/* //BIGGER SCREENS */
+@media(min-width:767px){
+    .humberger{
+        display: none;
+    }
+}
+
+/* //SMALLER SCREENS */
+@media(max-width:767px){
+
+    /* //NAVIGATION BAR */
+    .nav-left{
+        display: none;
+    }
+    .humberger{
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: 500px;
+        display: flex;
+    }
+    .nav-right .bg-screen{
+        display: none;
+    }
+    .nav-right ul li{
+        font-size: 16px;
+    }
+    .sign-up{
+        padding: 2px 1px;
+    }
+    .nav-items{
+        gap: 5px;
+    }
+
+    /* MINI NAVIGATION */
+    .items-container{
+        display: none;
+    }
+
+    /* HERO SECTION STARTS */
+    .hero-container{
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+    hero-desc h1{
+        font-size: 45px;
+        font-weight: 700;
+    }
+    .hero-container .hero-img{
+        width: 100%;
+    }
+    
+    .hero-container .hero-img img{
+        width: 100%;
+    }
+
+    /* ABOUT US SECTION STARTS */
+    .about-rows{
+        flex-wrap: wrap;
+    }
+
+}
+/* MEDIA QUERY RESPONSIVENESS */

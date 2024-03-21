@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Karcare - One stop platform for the automotive industry</title>
     <link rel="stylesheet" href="index.css">
+    <script loading=async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs3nHRK_HuWB2anTYog_6vRiAWyx5HbTg&libraries=places"></script>
 </head>
 <body>
     <!-- NAVIGATION BAR START -->
@@ -13,7 +14,7 @@
         <div class="nav-container">
             <div class="nav-items">
                 <div class="logo">
-                    <h1>Karcare</h1>
+                    <h1 class="gradient-text">Karcare</h1>
                 </div>
 
                 <div class="nav-left nav-list">
@@ -94,21 +95,24 @@
                     <h1>
                         Need car service?
                     </h1>
-                    <p class="hero-tagline">
+                    <!-- <p class="hero-tagline">
                         Request a nearest car service for you!
-                    </p>
+                    </p> -->
                     <div class="service-req">
                         <div class="service-add">
-                            <input type="text" placeholder="Enter your location">
-                            <i class="fa fa-location-arrow"></i>
-                        </div>
-                        <div class="service-map">
-                            <input type="text" placeholder="Choose from map">
+                            <input type="text" id="location-input" placeholder="Enter your location">
                             <i class="fa fa-street-view"></i>
                         </div>
+                        <div class="service-map">
+                            <input type="tel" placeholder="Enter Phone">
+                            <i class="fa fa-phone"></i>
+                        </div>
                     </div>
-                    <div class="book-btn">
-                        Check Availability
+                    <div class="loc-btn">
+                        Next
+                    </div>
+                    <div class="phone-btn">
+                        Next
                     </div>
                 </div>
                 <div class="hero-img">

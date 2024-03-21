@@ -16,6 +16,11 @@
     text-decoration: none;
     color: #fff;
 }
+.gradient-text {
+    background: -webkit-linear-gradient(white, maroon);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .nav-items{
     display: flex;
@@ -52,7 +57,7 @@
     color: #111;
 }
 
-.fa-location-arrow, .fa-street-view{
+.fa-phone, .fa-street-view{
     margin-left: -40px;
     font-size: 24px;
 }
@@ -119,6 +124,10 @@
     margin-bottom: 15px;
 }
 
+.service-add .fa-street-view .fa-phone{
+    cursor: pointer;
+}
+
 .service-req input{
     width: 70%;
     padding: 15px 8px;
@@ -128,13 +137,13 @@
     background-color: #eee;
     margin-bottom: 25px;
 }
-.book-btn{
+.loc-btn, .phone-btn{
     background-color: #111;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
-    padding: 20px 8px;
-    width: 180px;
+    padding: 10px 8px;
+    width: 100px;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
